@@ -119,35 +119,6 @@
   }
 }
 
-// .fade-leave-to,
-// .fade-enter-from {
-//   @apply tw-opacity-0;
-// }
-
-// .fade-leave-from,
-// .fade-enter-to {
-//   @apply tw-opacity-100;
-// }
-
-// .fade-leave-active,
-// .fade-enter-active {
-//   @apply tw-transition-opacity tw-duration-500;
-// }
-
-// .slide-leave-to,
-// .slide-enter-from {
-//   @apply tw-translate-x-full;
-// }
-
-// // .slide-leave-from,
-// .slide-enter-to {
-//   @apply tw-translate-x-0;
-// }
-
-// .slide-leave-active,
-// .slide-enter-active {
-//   @apply tw-duration-500;
-// }
 </style>
 
 <script lang="ts" setup>

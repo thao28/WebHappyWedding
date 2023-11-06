@@ -318,35 +318,6 @@
   }
 }
 
-// .slide-left-leave-to,
-// .slide-left-enter-from {
-//   @apply tw-translate-x-full;
-// }
-
-// .slide-left-leave-from,
-// .slide-left-enter-to {
-//   @apply tw-translate-x-0;
-// }
-
-// .slide-left-leave-active,
-// .slide-left-enter-active {
-//   @apply tw-duration-1000;
-// }
-
-// .slide-right-leave-to,
-// .slide-right-enter-from {
-//   @apply tw--translate-x-full;
-// }
-
-// .slide-right-leave-from,
-// .slide-right-enter-to {
-//   @apply tw-translate-x-0;
-// }
-
-// .slide-right-leave-active,
-// .slide-right-enter-active {
-//   @apply tw-duration-1000;
-// }
 </style>
 
 <script lang="ts" setup>
