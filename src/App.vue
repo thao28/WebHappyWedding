@@ -1,4 +1,5 @@
 <template>
+  <Heart v-for="index in numHearts" :key="index" />
   <Header />
   <Slider />
   <InvitationSection />
@@ -10,7 +11,7 @@
   <Contact />
   <Donation />
   <Footer />
-  <PlayMusic/>
+  <PlayMusic />
 </template>
 
 <script lang="ts" setup>
@@ -27,4 +28,10 @@ import Donation from './components/Donation.vue';
 import Footer from './components/Footer.vue';
 import PlayMusic from './components/PlayMusic.vue';
 import Heart from './components/Heart.vue';
+
+let numHearts = 0;
+
+setInterval(() => {
+  numHearts++;
+}, 500);
 </script>

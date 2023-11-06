@@ -1,5 +1,5 @@
 <template>
-  <div class="banner tw-w-full tw-h-[100vh] tw-relative">
+  <div class="banner tw-w-full xs:tw-h-auto tw-h-[100vh] tw-relative">
     <Carousel :autoplay="1000" :itemsToShow="1" :wrapAround="true">
       <Slide v-for="(image, index) in images" :key="image.id">
         <div class="tw-w-full tw-h-full tw-justify-items-center tw-items-center">

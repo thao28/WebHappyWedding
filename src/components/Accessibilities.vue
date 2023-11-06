@@ -63,9 +63,7 @@ const scrolling = async () => {
     accesibilities.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } else {
-    showP.value = false;
-  }
+  } 
 };
 
 onMounted(() => {

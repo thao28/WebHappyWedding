@@ -2,26 +2,32 @@
   <img
     ref="heart"
     class="heart"
+    :style="heartStyle"
     src="https://linhda0611.iwedding.info/common/imgs/heart.png"
-    alt="heart"
+    @load="startAnimation"
   />
 </template>
 
-<style lang="scss" scss scoped>
-.heart {
-  z-index: 999;
-  width: 16px;
-}
-</style>
+<style lang="scss" scss scoped></style>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-const heart = ref<HTMLElement | null>(null);
-// let heartElement = heart.value;
-// const a = () => {
-//   console.log(heartElement);
-// };
+const heart = ref<any | HTMLElement>(null);
+let heartValue;
 
-// setInterval(a, 500);
+const heartStyle = {
+  zIndex: '9999',
+  left: `${Math.random() * 100}vw`,
+  animationDuration: `${Math.random() * 2 + 5}s`,
+  width: `${Math.random() * 20}px`,
+};
+
+setTimeout(() => {
+  heartValue = heart.value;
+  const rect = heartValue.getBoundingClientRect();
+  if (rect.top > 1000) {
+    heartValue.remove();
+  }
+}, 5000);
 </script>

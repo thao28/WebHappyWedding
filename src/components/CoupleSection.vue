@@ -15,18 +15,16 @@
       <div class="tw-block sm:tw-flex">
         <div class="tw-w-full">
           <div class="couple-area">
-            <div class="couple-row">
-              <transition name="slide-right">
-                <div class="img-holder" v-if="showP">
+            <transition name="slide-right">
+              <div class="couple-row" v-if="showP">
+                <div class="img-holder">
                   <img
                     class="tw-w-full"
                     src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/129d1550e15d4353f9a428a8745e6271.jpeg"
                     alt=""
                   />
                 </div>
-              </transition>
-              <transition name="slide-left">
-                <div class="detail slide-right" v-if="showP">
+                <div class="detail slide-right">
                   <div class="inner">
                     <h2>Văn Đà</h2>
                     <p>
@@ -36,11 +34,11 @@
                     </p>
                   </div>
                 </div>
-              </transition>
-            </div>
-            <div class="couple-row">
-              <transition name="slide-right">
-                <div class="detail" v-if="showP">
+              </div>
+            </transition>
+            <transition name="slide-left">
+              <div class="couple-row" v-if="showP">
+                <div class="detail">
                   <div class="inner">
                     <h2>Thuỳ Linh</h2>
                     <p>
@@ -50,17 +48,15 @@
                     </p>
                   </div>
                 </div>
-              </transition>
-              <transition name="slide-left">
-                <div class="img-holder slide-right" v-if="showP">
+                <div class="img-holder slide-right">
                   <img
                     class="tw-w-full"
                     src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/66eed7617572e6f734c7c8f96a24ce60.jpeg"
                     alt=""
                   />
                 </div>
-              </transition>
-            </div>
+              </div>
+            </transition>
           </div>
         </div>
       </div>
@@ -317,7 +313,6 @@
     }
   }
 }
-
 </style>
 
 <script lang="ts" setup>
@@ -333,9 +328,7 @@ const scrolling = async () => {
     couple.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } else {
-    showP.value = false;
-  }
+  } 
 };
 
 onMounted(() => {

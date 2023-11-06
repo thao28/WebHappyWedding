@@ -269,9 +269,7 @@ const scrolling = async () => {
     event.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } else {
-    showP.value = false;
-  }
+  } 
 };
 
 onMounted(() => {

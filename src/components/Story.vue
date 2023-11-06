@@ -443,9 +443,7 @@ const scrolling = async () => {
     story.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } else {
-    showP.value = false;
-  }
+  } 
 };
 
 onMounted(() => {
