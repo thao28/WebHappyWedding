@@ -10,6 +10,7 @@
   <Contact />
   <Donation />
   <Footer />
+  <PlayMusic/>
 </template>
 
 <script lang="ts" setup>
@@ -25,4 +26,5 @@ import Contact from './components/Contact.vue';
 import Donation from './components/Donation.vue';
 import Footer from './components/Footer.vue';
 import PlayMusic from './components/PlayMusic.vue';
+import Heart from './components/Heart.vue';
 </script>
