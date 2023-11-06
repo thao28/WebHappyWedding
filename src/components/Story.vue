@@ -428,13 +428,12 @@
     }
   }
 }
-
 </style>
 
 <script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
-const story = ref<HTMLElement|null>(null);
+const story = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 
 const scrolling = async () => {

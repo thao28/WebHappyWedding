@@ -8,12 +8,12 @@
       <div class="tw-flex">
         <div class="tw-w-full">
           <div class="tw-text-center tw-py-10">
-            <transition name="slide-right"
+            <transition name="fade"
               ><a href="#" class="access-button" v-if="showP"
                 ><span>Gửi lời chúc</span></a
               ></transition
             >
-            <transition name="slide-left"
+            <transition name="fade"
               ><a href="#" class="access-button" v-if="showP"><span>Mừng cưới</span></a></transition
             >
           </div>

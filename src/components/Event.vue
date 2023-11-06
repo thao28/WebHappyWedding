@@ -219,20 +219,6 @@
   }
 }
 
-.fade-leave-to,
-.fade-enter-from {
-  @apply tw-opacity-0;
-}
-
-.fade-leave-from,
-.fade-enter-to {
-  @apply tw-opacity-100;
-}
-
-.fade-leave-active,
-.fade-enter-active {
-  @apply tw-transition-opacity tw-duration-1000;
-}
 </style>
 
 <script lang="ts" setup>

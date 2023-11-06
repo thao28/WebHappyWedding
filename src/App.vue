@@ -24,5 +24,5 @@ import Album from './components/Album.vue';
 import Contact from './components/Contact.vue';
 import Donation from './components/Donation.vue';
 import Footer from './components/Footer.vue';
-
+import PlayMusic from './components/PlayMusic.vue';
 </script>
