@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="tw-columns-3xs">
-        <img class="tw-mb-4" v-for="image in images" :src="image.url" />
+        <img class="tw-mb-4" v-for="image in images" :src="image.url" alt=""/>
       </div>
     </div>
   </section>

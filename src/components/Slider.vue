@@ -1,9 +1,9 @@
 <template>
   <div class="banner tw-w-full xs:tw-h-auto tw-h-[100vh] tw-relative">
-    <Carousel :autoplay="1000" :itemsToShow="1" :wrapAround="true">
+    <Carousel :autoplay="3000" :transition="1500" :itemsToShow="1" :wrapAround="true">
       <Slide v-for="(image, index) in images" :key="image.id">
         <div class="tw-w-full tw-h-full tw-justify-items-center tw-items-center">
-          <img class="slide-img" :src="image.url" alt="" />
+          <img class="slide-img" :src="image.url" alt="" loading="lazy" />
         </div>
       </Slide>
     </Carousel>
@@ -21,11 +21,11 @@ import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 
 interface Image {
-  id:number,
-  url:string
+  id: number;
+  url: string;
 }
 
-const images:Image[] = [
+const images: Image[] = [
   {
     id: 1,
     url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/templates/6174ef83a62963738e0a367c/ff47ee5c7f44475387a85dc2f20256d3.jpg',
