@@ -1,5 +1,5 @@
 <template>
-  <Heart v-for="index in numHearts" :key="index" />
+  <Heart v-for="index in 15" :key="index" />
   <Header />
   <Slider />
   <InvitationSection />
@@ -29,9 +29,4 @@ import Footer from './components/Footer.vue';
 import PlayMusic from './components/PlayMusic.vue';
 import Heart from './components/Heart.vue';
 
-let numHearts = 0;
-
-setInterval(() => {
-  numHearts++;
-}, 500);
 </script>
