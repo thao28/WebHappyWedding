@@ -1,7 +1,6 @@
 <template>
   <header
-    class="header tw-divide-y tw-divide-[#efefef] tw-fixed tw-top-0 tw-left-0 tw-w-full tw-z-10 tw-bg-white tw-opacity-80"
-    ref="mobileNav"
+    class="header tw-divide-y tw-divide-[#efefef] tw-fixed tw-top-0 tw-left-0 tw-w-full tw-z-10 tw-bg-white"
   >
     <div class="header-menu tw-py-4 lg:tw-hidden md:tw-block">
       <div class="tw-flex tw-flex-row">
@@ -13,18 +12,19 @@
               <span class="tw-text-3xl tw-text-pink">L</span>
             </a>
           </div>
-          <div class="toggle-button tw-mr-4" @click="toggleMobileNav">
+          <div class="toggle-button tw-mr-4" @click="() => toggleMobileNav(!mobileNav)">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </div>
           <transition name="slide">
             <ul
-              v-if="!mobileNav"
+              v-if="mobileNav"
               class="mobile-list-item tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0"
               id="mySidenav"
+              v-click-outside="() => toggleMobileNav(false)"
             >
-              <div class="close-button" @click="toggleMobileNav">X</div>
+              <!-- <div class="close-button" @click="toggleMobileNav">X</div> -->
               <li class="item tw-block">
                 <a
                   href="#couple"
@@ -118,7 +118,6 @@
     }
   }
 }
-
 </style>
 
 <script lang="ts" setup>
@@ -126,7 +125,7 @@ import { ref } from 'vue';
 
 let mobileNav = ref<boolean>(false);
 
-const toggleMobileNav = () => {
-  mobileNav.value = !mobileNav.value;
+const toggleMobileNav = (value: any) => {
+  mobileNav.value = value;
 };
 </script>

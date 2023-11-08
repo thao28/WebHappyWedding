@@ -24,11 +24,10 @@
 </style>
 
 <script lang="ts" setup>
-
 const heartStyle = {
   zIndex: '9999',
   left: `${Math.random() * 100}vw`,
   animationDuration: `${Math.random() * 10 + 5}s`,
-  width: `${Math.random() * 20}px`,
+  width: `${Math.random() * 30 }px`,
 };
 </script>

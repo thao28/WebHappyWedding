@@ -1,6 +1,6 @@
 <template>
   <section id="album" class="wedding-album">
-    <div class="tw-container">
+    <div class="lg:tw-container">
       <div class="sm:tw-block tw-flex tw-px-3.5">
         <div class="tw-w-3/4 tw-mx-auto">
           <div class="title tw-font-comfortaa">

@@ -1,6 +1,6 @@
 <template>
   <section id="story" class="story-section section">
-    <div class="tw-container">
+    <div class="lg:tw-container">
       <div class="sm:tw-block tw-flex tw-px-3.5">
         <div class="tw-w-3/4 tw-mx-auto">
           <div class="title">
@@ -75,7 +75,7 @@
 <style scoped lang="scss">
 .story-section {
   padding: 120px 0;
-  @media (max-width: 991px) {
+  @media screen and (max-width: 991px) {
     padding: 100px 0;
   }
   .title {
@@ -110,7 +110,10 @@
     @media only screen and (max-width: 600px) {
       padding: 50px 25px;
     }
-    box-shadow: 0px 4px 13.65px 7.35px rgba(178, 201, 211, 0.16);
+    @media only screen and (min-width: 800px) {
+      box-shadow: 0px 4px 13.65px 7.35px rgba(178, 201, 211, 0.16);
+    }
+
     ul {
       position: relative;
       @media only screen and (min-width: 601px) {
@@ -260,9 +263,6 @@
           }
           img {
             width: 100%;
-            @media only screen and (min-width: 772px) {
-              max-width: 256px;
-            }
             @media only screen and (min-width: 992px) {
               max-width: 356px;
             }
@@ -443,7 +443,7 @@ const scrolling = async () => {
     story.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } 
+  }
 };
 
 onMounted(() => {
