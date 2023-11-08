@@ -19,51 +19,53 @@
           </div>
           <transition name="slide">
             <ul
-              v-if="mobileNav"
-              class="mobile-list-item tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0"
+              :class="[
+                mobileNav
+                  ? 'mobile-list-item slide-in tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8 '
+                  : 'slide-out tw-w-0 tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8 ',
+              ]"
               id="mySidenav"
               v-click-outside="() => toggleMobileNav(false)"
             >
-              <!-- <div class="close-button" @click="toggleMobileNav">X</div> -->
               <li class="item tw-block">
                 <a
                   href="#couple"
-                  class="item-link tw-block tw-py-2.5 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
+                  class="item-link tw-block tw-py-4 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
                   >Cặp đôi</a
                 >
               </li>
               <li class="item tw-block">
                 <a
                   href="#story"
-                  class="item-link tw-block tw-py-2.5 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
+                  class="item-link tw-block tw-py-4 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
                   >Chuyện tình yêu</a
                 >
               </li>
               <li class="item tw-block">
                 <a
                   href="#album"
-                  class="item-link tw-block tw-py-2.5 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
+                  class="item-link tw-block tw-py-4 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
                   >Album cưới</a
                 >
               </li>
               <li class="item tw-block">
                 <a
                   href="#event"
-                  class="item-link tw-block tw-py-2.5 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
+                  class="item-link tw-block tw-py-4 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
                   >Sự kiện</a
                 >
               </li>
               <li class="item tw-block">
                 <a
                   href="#wish"
-                  class="item-link tw-block tw-py-2.5 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
+                  class="item-link tw-block tw-py-4 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
                   >Lời chúc</a
                 >
               </li>
               <li class="item tw-block">
                 <a
                   href="#donation"
-                  class="item-link tw-block tw-py-2.5 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
+                  class="item-link tw-block tw-py-4 tw-pl-10 tw-pr-24 tw-font-comfortaa tw-text-sm hover:tw-text-pink"
                   >Mừng cưới</a
                 >
               </li>
@@ -81,6 +83,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
   .toggle-button {
     cursor: pointer;
     background-color: #c89d9c;
@@ -101,6 +104,8 @@
   .mobile-list-item {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
+    animation: slideIn 0.5s;
+
     .close-button {
       font-family: Comfortaa;
       cursor: pointer;
@@ -115,6 +120,28 @@
     }
     .item-link {
       border-bottom: 1px solid #f2f2f2;
+    }
+  }
+  .slide-out {
+    animation: slideOut 1s;
+    @keyframes slideOut {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 0;
+      }
+    }
+  }
+  .slide-in {
+    animation: slideIn 1s;
+    @keyframes slideIn {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
     }
   }
 }

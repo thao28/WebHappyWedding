@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  prefix: "tw-",
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  prefix: 'tw-',
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     screens: {
       xs: '300px',
@@ -39,5 +36,4 @@ export default {
     extend: {},
   },
   plugins: [],
-}
-
+};
