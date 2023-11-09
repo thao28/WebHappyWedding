@@ -19,13 +19,10 @@
           </div>
           <transition name="slide">
             <ul
-              :class="[
-                mobileNav
-                  ? 'mobile-list-item slide-in tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8 '
-                  : 'slide-out tw-w-0 tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8 ',
-              ]"
+              class="mobile-list-item tw-w-0 tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8"
+              :class="{ 'slide-in': mobileNav, 'slide-out': !mobileNav, 'tw-hidden': isOpen }"
               id="mySidenav"
-              v-click-outside="() => toggleMobileNav(false)"
+              v-click-outside="() => toggleMobileNav(!mobileNav)"
             >
               <li class="item tw-block">
                 <a
@@ -77,6 +74,18 @@
   </header>
 </template>
 
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+let mobileNav = ref<boolean>(false);
+let isOpen = ref<boolean>(true);
+
+const toggleMobileNav = (value: any) => {
+  isOpen.value = false;
+  mobileNav.value = value;
+};
+</script>
+
 <style lang="scss" scoped>
 .nav-bar-header {
   display: flex;
@@ -123,13 +132,15 @@
     }
   }
   .slide-out {
-    animation: slideOut 1s;
+    animation: slideOut 1s forwards;
     @keyframes slideOut {
       from {
-        width: 100%;
+        transform: translateX(0);
+        // width: 100%;
       }
       to {
-        width: 0;
+        transform: translateX(100%);
+        // width: 0;
       }
     }
   }
@@ -137,22 +148,14 @@
     animation: slideIn 1s;
     @keyframes slideIn {
       from {
-        width: 0;
+        transform: translateX(100%);
+        // width: 0;
       }
       to {
-        width: 100%;
+        transform: translateX(0);
+        // width: 100%;
       }
     }
   }
 }
 </style>
-
-<script lang="ts" setup>
-import { ref } from 'vue';
-
-let mobileNav = ref<boolean>(false);
-
-const toggleMobileNav = (value: any) => {
-  mobileNav.value = value;
-};
-</script>
