@@ -25,11 +25,14 @@
                 <transition name="slide-left">
                   <div class="donate-card" v-if="showP">
                     <h3 class="tw-font-comfortaa">Mừng cưới đến cô dâu</h3>
-                    <img
+                    <!-- <img
                       class="tw-mx-auto"
                       src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/c22112567c0314ba40c9e414356ece51.jpeg"
                       alt=""
-                    />
+                    /> -->
+                    <a-space direction="vertical" align="center">
+                      <a-qrcode :value="text" />
+                    </a-space>
                     <p class="tw-font-comfortaa">Ngân hàng: <strong>Vietinbank</strong></p>
                     <p class="tw-font-comfortaa">
                       Tên tài khoản: <strong>Phạm Thị Thuỳ Linh</strong>
@@ -276,7 +279,6 @@
     }
   }
 }
-
 </style>
 
 <script lang="ts" setup>
@@ -316,6 +318,7 @@
 
 import { ref, onMounted, onUnmounted } from 'vue';
 
+const text = ref('https://edtexco.com/');
 const donation = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 
@@ -326,7 +329,7 @@ const scrolling = async () => {
     donation.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } 
+  }
 };
 
 onMounted(() => {
