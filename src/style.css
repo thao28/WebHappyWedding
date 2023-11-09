@@ -42,3 +42,7 @@
 .fade-enter-active {
   @apply tw-transition-opacity tw-duration-1000;
 }
+
+html {
+  scroll-behavior: smooth;
+}
