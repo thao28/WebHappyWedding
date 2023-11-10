@@ -12,23 +12,34 @@
           </div>
         </div>
       </div>
-
-      <a-modal v-model:open="open" title="Gửi lời chúc" @ok="handleOk">
-        <a-form :model="formState" :label-col="labelCol" :wrapper-col="wrapperCol">
-          <a-form-item label="Tên">
+      <a-modal v-model:open="open" title="Gửi lời chúc" @ok="handleOk" :footer="null">
+        <a-form
+          ref="formRef"
+          :rules="rules"
+          :model="formState"
+          :label-col="labelCol"
+          layout="vertical"
+        >
+          <a-form-item name="name" label="Tên">
             <a-input v-model:value="formState.name" />
           </a-form-item>
-          <a-form-item label="Email">
+          <a-form-item name="email" label="Email">
             <a-input v-model:value="formState.email" />
           </a-form-item>
-          <a-form-item label="Đi Đám Cưới">
+          <a-form-item name="message" label="Gửi lời chúc">
+            <a-textarea v-model:value="formState.message" />
+          </a-form-item>
+          <a-form-item name="go" label="Đi Đám Cưới">
             <a-radio-group v-model:value="formState.go">
               <a-radio value="1">Có</a-radio>
               <a-radio value="2">Không</a-radio>
             </a-radio-group>
           </a-form-item>
-          <a-form-item label="Gửi lời chúc">
-            <a-textarea v-model:value="formState.message" />
+          <a-form-item class="">
+            <a-button class="send-wish tw-bg-pink" type="primary" @click="handleOk"
+              >Gửi lời chúc</a-button
+            >
+            <a-button style="margin-left: 10px" @click="closeModal">Cancel</a-button>
           </a-form-item>
         </a-form>
       </a-modal>
@@ -43,59 +54,6 @@
             </div>
           </div>
         </div>
-        <!-- <transition name="slide-right">
-          <div
-            class="lg:tw-w-1/2 lg:tw-mr-6 md:tw-mr-6 md:tw-w-7/12 sm:tw-w-full xs:tw-mb-8"
-            v-if="showP"
-          >
-            <div class="contact-form slide-left">
-              <form
-                @submit.prevent="onSubmit"
-                action=""
-                class="tw-block md:tw-flex md:tw-w-full md:tw-flex-wrap"
-              >
-                <div class="sm:tw-w-full md:tw-w-6/12 md:tw-pr-4">
-                  <input
-                    type="text"
-                    v-model="data.name"
-                    placeholder="Nhập họ tên*"
-                    class="tw-font-comfortaa"
-                  />
-                </div>
-                <div class="sm:tw-w-full md:tw-w-6/12">
-                  <input
-                    type="text"
-                    v-model="data.email"
-                    placeholder="Nhập email"
-                    class="tw-font-comfortaa"
-                  />
-                </div>
-                <div class="sm:tw-w-full md:tw-w-full">
-                  <textarea
-                    v-model="data.message"
-                    placeholder="Nhập lời chúc của bạn"
-                    class="tw-font-comfortaa tw-max-h-48"
-                  ></textarea>
-                </div>
-                <div class="sm:tw-w-full md:tw-w-full submit-button">
-                  <button type="submit" class="tw-font-comfortaa">Gửi lời chúc</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </transition>
-        <transition name="slide-left">
-          <div class="lg:tw-w-1/2 md:tw-w-5/12 sm:tw-w-full" v-if="showP">
-            <div class="wish-box slide-right">
-              <div class="wish-box-item" v-for="wish in wishList" :key="wish.id">
-                <strong class="tw-font-comfortaa">{{ wish.name }}</strong>
-                <p class="tw-font-comfortaa tw-w-full tw-text-clip tw-overflow-hidden">
-                  {{ wish.message }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </transition> -->
       </div>
       <div class="tw-mt-4 tw-w-full tw-text-center">
         <a-button class="send-wish tw-bg-pink" type="primary" @click="showModal"
@@ -235,17 +193,41 @@
 </style>
 
 <script lang="ts" setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { ref, onMounted, onUnmounted, computed, reactive, toRaw } from 'vue';
+import type { Rule } from 'ant-design-vue/es/form';
+import type { UnwrapRef } from 'vue';
 import { useStore } from 'vuex';
 
 const contact = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 const store = useStore<any>();
 const open = ref<boolean>(false);
+const formRef = ref();
 
 // Ant
-import { reactive, toRaw } from 'vue';
-import type { UnwrapRef } from 'vue';
+const rules: Record<string, Rule[]> = {
+  name: [{ required: true, message: 'Vui lòng điền tên', trigger: 'blur' }],
+  email: [
+    {
+      required: true,
+      message: 'Vui lòng điền email',
+      trigger: 'change',
+      type: 'email',
+    },
+  ],
+  message: [
+    {
+      required: false,
+    },
+  ],
+  go: [
+    {
+      required: true,
+      message: 'Vui lòng Chọn đi hay Không',
+      trigger: 'change',
+    },
+  ],
+};
 
 interface FormState {
   name: string;
@@ -259,45 +241,39 @@ let formState: UnwrapRef<FormState> = reactive({
   go: '',
   message: '',
 });
-const onSubmit = () => {
-  console.log('submit!', toRaw(formState));
-};
+
 const labelCol = { style: { width: '150px' } };
-const wrapperCol = { span: 14 };
-//
 
 const showModal = () => {
   open.value = true;
 };
 
-const handleOk = (e: MouseEvent) => {
+const closeModal = () => {
+  resetForm();
   open.value = false;
+};
 
-  store.dispatch('wishList/postWishItem', formState).then(() => {
-    formState = {
-      name: '',
-      email: '',
-      go: '',
-      message: '',
-    };
-  });
+const handleOk = (e: MouseEvent) => {
+  formRef.value
+    .validate()
+    .then(() => {
+      open.value = false;
+      store.dispatch('wishList/postWishItem', formState);
+      resetForm();
+      console.log('values', formState, toRaw(formState));
+    })
+    .catch((error) => {
+      console.log('error', error);
+    });
+};
+
+const resetForm = () => {
+  formRef.value.resetFields();
 };
 
 const getAllWishItems = () => store.dispatch('wishList/getAllWishItems');
 getAllWishItems();
 const wishList = computed(() => store.getters['wishList/wishList']);
-
-// interface Data {
-//   name: string;
-//   email: string;
-//   message: string;
-// }
-
-// let data = ref<Data>({
-//   name: '',
-//   email: '',
-//   message: '',
-// });
 
 const scrolling = async () => {
   if (
@@ -309,16 +285,6 @@ const scrolling = async () => {
   }
 };
 
-// const onSubmit = () => {
-//   store.dispatch('wishList/postWishItem', data.value).then(() => {
-//     data.value = {
-//       name: '',
-//       email: '',
-//       message: '',
-//     };
-//   });
-// };
-
 onMounted(() => {
   window.addEventListener('scroll', scrolling);
 });
@@ -326,87 +292,4 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', scrolling);
 });
-
-// export default {
-// name: 'Contact',
-// data() {
-//   const showP = ref(false);
-//   return {
-//     showP,
-//     data: {
-//       name: '',
-//       email: '',
-//       message: '',
-//     },
-//   };
-// },
-// computed: {
-//   ...mapGetters(['wishList']),
-// },
-// created() {
-//   this.$store.dispatch('getAllWishItems');
-//   this.$store.getters.getItem;
-// },
-// mounted() {
-//   window.addEventListener('scroll', this.scrolling);
-//   this.topPositionEl = this.$refs.contact.getBoundingClientRect();
-// },
-// updated() {
-//   window.addEventListener('scroll', this.scrolling);
-// },
-// unmounted() {
-//   window.removeEventListener('scroll', this.scrolling);
-// },
-// methods: {
-//   scrolling() {
-//     if (
-//       this.$refs.contact.getBoundingClientRect().top < window.innerHeight &&
-//       this.$refs.contact.getBoundingClientRect().bottom >= 0
-//     ) {
-//       this.showP = true;
-//     } else {
-//       this.showP = false;
-//     }
-//   },
-
-//   // async getData() {
-//   //   try {
-//   //     const response = await axios.get(
-//   //       'https://sheet.best/api/sheets/c0acd53c-4d9c-4477-a4b4-0f8e0047bfd7'
-//   //     );
-//   //     this.wishList = response.data;
-//   //   } catch (error) {
-//   //     console.error('Error getting data:', error);
-//   //   }
-//   // },
-
-//   onSubmit() {
-//     this.$store.dispatch('postWishItem', this.data).then(() => {
-//       console.log(this.data);
-//       this.data = {
-//         message: '',
-//         name: '',
-//         email: '',
-//       };
-//     });
-
-//     // try {
-//     //   const response = await axios.post(
-//     //     'https://sheet.best/api/sheets/c0acd53c-4d9c-4477-a4b4-0f8e0047bfd7',
-//     //     this.data
-//     //   );
-//     //   if (response.status === 200) {
-//     //     this.wishList.push(this.data);
-//     //     this.data = {
-//     //       message: '',
-//     //       name: '',
-//     //       email: '',
-//     //     };
-//     //   }
-//     // } catch (e) {
-//     //   console.error('Error getting data:', error);
-//     // }
-//   },
-// },
-// };
 </script>
