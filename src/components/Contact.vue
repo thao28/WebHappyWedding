@@ -1,6 +1,6 @@
 <template>
   <section id="wish" class="contact-section section" ref="contact">
-    <div class="sm:tw-container">
+    <div class="lg:tw-container">
       <div class="sm:tw-block tw-flex tw-px-3.5">
         <div class="tw-w-3/4 tw-mx-auto">
           <div class="title">
@@ -12,7 +12,13 @@
           </div>
         </div>
       </div>
-      <a-modal v-model:open="open" title="Gửi lời chúc" @ok="handleOk" :footer="null">
+      <a-modal
+        v-model:open="open"
+        title="Gửi lời chúc"
+        @ok="handleOk"
+        :footer="null"
+        centered="true"
+      >
         <a-form
           ref="formRef"
           :rules="rules"
@@ -55,8 +61,11 @@
           </div>
         </div>
       </div>
-      <div class="tw-mt-4 tw-w-full tw-text-center">
-        <a-button class="send-wish tw-bg-pink" type="primary" @click="showModal"
+      <div class="tw-mt-14 tw-w-full tw-text-center">
+        <a-button
+          class="send-wish tw-bg-pink tw-m-auto tw-py-6 tw-px-10 tw-items-center tw-flex tw-text-xl"
+          type="primary"
+          @click="showModal"
           >Gửi lời chúc</a-button
         >
       </div>
@@ -66,7 +75,6 @@
 
 <style lang="scss" scoped>
 .contact-section {
-  background: url('https://linhda0611.iwedding.info/templates/template15/images/bg.png');
   padding: 120px 0;
   @media only screen and (max-width: 991px) {
     padding: 100px 0;
@@ -161,7 +169,6 @@
     height: 450px;
     background-color: #fff;
     color: #333;
-    border: 5px solid #c89d9c;
     &::-webkit-scrollbar {
       width: 6px;
     }
