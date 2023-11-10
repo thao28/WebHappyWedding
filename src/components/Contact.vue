@@ -12,8 +12,38 @@
           </div>
         </div>
       </div>
+
+      <a-modal v-model:open="open" title="Gửi lời chúc" @ok="handleOk">
+        <a-form :model="formState" :label-col="labelCol" :wrapper-col="wrapperCol">
+          <a-form-item label="Tên">
+            <a-input v-model:value="formState.name" />
+          </a-form-item>
+          <a-form-item label="Email">
+            <a-input v-model:value="formState.email" />
+          </a-form-item>
+          <a-form-item label="Đi Đám Cưới">
+            <a-radio-group v-model:value="formState.go">
+              <a-radio value="1">Có</a-radio>
+              <a-radio value="2">Không</a-radio>
+            </a-radio-group>
+          </a-form-item>
+          <a-form-item label="Gửi lời chúc">
+            <a-textarea v-model:value="formState.message" />
+          </a-form-item>
+        </a-form>
+      </a-modal>
       <div class="tw-block md:tw-flex">
-        <transition name="slide-right">
+        <div class="tw-w-full" v-if="showP">
+          <div class="wish-box slide-right">
+            <div class="wish-box-item" v-for="wish in wishList" :key="wish.id">
+              <strong class="tw-font-comfortaa">{{ wish.name }}</strong>
+              <p class="tw-font-comfortaa tw-w-full tw-text-clip tw-overflow-hidden">
+                {{ wish.message }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <transition name="slide-right">
           <div
             class="lg:tw-w-1/2 lg:tw-mr-6 md:tw-mr-6 md:tw-w-7/12 sm:tw-w-full xs:tw-mb-8"
             v-if="showP"
@@ -65,7 +95,12 @@
               </div>
             </div>
           </div>
-        </transition>
+        </transition> -->
+      </div>
+      <div class="tw-mt-4 tw-w-full tw-text-center">
+        <a-button class="send-wish tw-bg-pink" type="primary" @click="showModal"
+          >Gửi lời chúc</a-button
+        >
       </div>
     </div>
   </section>
@@ -190,8 +225,13 @@
       }
     }
   }
-}
 
+  .send-wish {
+    &:hover {
+      background-color: #b58887;
+    }
+  }
+}
 </style>
 
 <script lang="ts" setup>
@@ -201,22 +241,63 @@ import { useStore } from 'vuex';
 const contact = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 const store = useStore<any>();
+const open = ref<boolean>(false);
+
+// Ant
+import { reactive, toRaw } from 'vue';
+import type { UnwrapRef } from 'vue';
+
+interface FormState {
+  name: string;
+  email: string;
+  go: string;
+  message: string;
+}
+let formState: UnwrapRef<FormState> = reactive({
+  name: '',
+  email: '',
+  go: '',
+  message: '',
+});
+const onSubmit = () => {
+  console.log('submit!', toRaw(formState));
+};
+const labelCol = { style: { width: '150px' } };
+const wrapperCol = { span: 14 };
+//
+
+const showModal = () => {
+  open.value = true;
+};
+
+const handleOk = (e: MouseEvent) => {
+  open.value = false;
+
+  store.dispatch('wishList/postWishItem', formState).then(() => {
+    formState = {
+      name: '',
+      email: '',
+      go: '',
+      message: '',
+    };
+  });
+};
 
 const getAllWishItems = () => store.dispatch('wishList/getAllWishItems');
 getAllWishItems();
 const wishList = computed(() => store.getters['wishList/wishList']);
 
-interface Data {
-  name: string;
-  email: string;
-  message: string;
-}
+// interface Data {
+//   name: string;
+//   email: string;
+//   message: string;
+// }
 
-let data = ref<Data>({
-  name: '',
-  email: '',
-  message: '',
-});
+// let data = ref<Data>({
+//   name: '',
+//   email: '',
+//   message: '',
+// });
 
 const scrolling = async () => {
   if (
@@ -225,18 +306,18 @@ const scrolling = async () => {
     contact.value.getBoundingClientRect().bottom >= 0
   ) {
     showP.value = true;
-  } 
+  }
 };
 
-const onSubmit = () => {
-  store.dispatch('wishList/postWishItem', data.value).then(() => {
-    data.value = {
-      name: '',
-      email: '',
-      message: '',
-    };
-  });
-};
+// const onSubmit = () => {
+//   store.dispatch('wishList/postWishItem', data.value).then(() => {
+//     data.value = {
+//       name: '',
+//       email: '',
+//       message: '',
+//     };
+//   });
+// };
 
 onMounted(() => {
   window.addEventListener('scroll', scrolling);

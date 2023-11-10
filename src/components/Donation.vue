@@ -25,11 +25,6 @@
                 <transition name="slide-left">
                   <div class="donate-card" v-if="showP">
                     <h3 class="tw-font-comfortaa">Mừng cưới đến cô dâu</h3>
-                    <!-- <img
-                      class="tw-mx-auto"
-                      src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/c22112567c0314ba40c9e414356ece51.jpeg"
-                      alt=""
-                    /> -->
                     <a-space direction="vertical" align="center">
                       <a-qrcode :value="text" />
                     </a-space>
@@ -282,45 +277,12 @@
 </style>
 
 <script lang="ts" setup>
-// import { ref } from 'vue';
-
-// export default {
-//   name: 'Donation',
-//   data() {
-//     const showP = ref(false);
-//     return {
-//       showP,
-//     };
-//   },
-//   mounted() {
-//     window.addEventListener('scroll', this.scrolling);
-//     this.topPositionEl = this.$refs.donation.getBoundingClientRect();
-//   },
-//   updated() {
-//     window.addEventListener('scroll', this.scrolling);
-//   },
-//   unmounted() {
-//     window.removeEventListener('scroll', this.scrolling);
-//   },
-//   methods: {
-//     scrolling() {
-//       if (
-//         this.$refs.donation.getBoundingClientRect().top < window.innerHeight &&
-//         this.$refs.donation.getBoundingClientRect().bottom >= 0
-//       ) {
-//         this.showP = true;
-//       } else {
-//         this.showP = false;
-//       }
-//     },
-//   },
-// };
-
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const text = ref('https://edtexco.com/');
 const donation = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
+
 
 const scrolling = async () => {
   if (
