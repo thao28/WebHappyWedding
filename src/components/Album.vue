@@ -10,11 +10,13 @@
               cho bạn dũng khí.
             </p>
           </div>
-          <a class="album-button" href="#">Xem Album</a>
+          <div class="tw-flex tw-items-center tw-justify-center">
+          <a class="album-button " href="#">Xem Album</a>
+          </div>
         </div>
       </div>
       <div class="tw-columns-3xs">
-        <img class="tw-mb-4" v-for="image in images" :src="image.url" alt=""/>
+        <a-image class="tw-mb-4" v-for="image in images" :src="image.url" alt=""/>
       </div>
     </div>
   </section>
@@ -51,15 +53,17 @@
   }
   .album-button {
     text-align: center;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #c89d9c;
     color: #fff;
     line-height: 17.6px;
-    padding: 15px 50px 15px 25px;
+    width:200px;
+    height:38px;
     font-weight: 600;
     border: 0;
-    border-radius: 0;
-    position: relative;
+    border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 52px;
     &:hover {

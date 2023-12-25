@@ -33,7 +33,7 @@
                 </transition>
                 <transition name="slide-left">
                   <div class="img-holder" v-if="showP">
-                    <img
+                    <a-image
                       src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/2a24c5682d30e4e7ab491e6dec531243.jpeg"
                       alt=""
                     />
@@ -43,7 +43,7 @@
               <li>
                 <transition name="slide-right">
                   <div class="img-holder" v-if="showP">
-                    <img
+                    <a-image
                       src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/b2d4ed7b8ce31444085c3b430b3d7010.jpeg"
                       alt=""
                     />
@@ -74,7 +74,7 @@
 
 <style scoped lang="scss">
 .story-section {
-  padding: 120px 0;
+  padding: 60px 0;
   @media screen and (max-width: 991px) {
     padding: 100px 0;
   }
@@ -107,6 +107,7 @@
 
   .story-block {
     padding: 70px;
+    border-radius: 4px;
     @media only screen and (max-width: 600px) {
       padding: 50px 25px;
     }
@@ -278,13 +279,13 @@
 
 .invitation-section {
   background: url('https://linhda0611.iwedding.info/templates/template15/images/bg.png');
-  padding: 120px 0;
+  padding: 60px 0;
   overflow: hidden;
   .invitation-box {
     background: #fff;
     height: 583px;
     max-width: 580px;
-    padding: 120px 70px;
+    padding: 60px 35px;
     box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
     text-align: center;
     margin: 0 auto;

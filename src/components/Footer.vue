@@ -2,7 +2,7 @@
   <footer class="site-footer">
     <div class="inner">
       <div class="couple-pic">
-        <img
+        <a-image
           src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/e85f1c0e6a46f92a165ed78a79ff1a09.jpeg"
           alt=""
         />

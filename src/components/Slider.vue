@@ -3,15 +3,17 @@
     <Carousel :autoplay="3000" :transition="1500" :itemsToShow="1" :wrapAround="true">
       <Slide v-for="(image, index) in images" :key="image.id">
         <div class="tw-w-full tw-h-full tw-justify-items-center tw-items-center">
-          <img class="slide-img" :src="image.url" alt="" loading="lazy" />
+          <a-image class="slide-img" :src="image.url" alt="" loading="lazy" />
         </div>
       </Slide>
     </Carousel>
     <div class="slide-text tw-absolute tw-left-1/2 tw-top-1/2">
-      <h2 class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl">
-        Văn Đà Thuỳ Linh
-      </h2>
-      <h4 class="sub-title tw-font-comfortaa tw-text-center tw-text-white">11 Tháng 6 2023</h4>
+      <div class="tw-flex tw-items-center tw-mb-3">
+        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl ">Phạm Hiếu</div>
+        <HeartFilled class="tw-text-3xl md:tw-text-5xl tw-text-white tw-mx-3"/>
+        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl ">Thanh Trà</div>
+      </div>
+      <h4 class="sub-title tw-font-comfortaa tw-text-center tw-text-white">21 Tháng 1 Năm 2024</h4>
     </div>
   </div>
 </template>
@@ -19,6 +21,7 @@
 <script lang="ts" setup>
 import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
+import {HeartFilled} from "@ant-design/icons-vue"
 
 interface Image {
   id: number;

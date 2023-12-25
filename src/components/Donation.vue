@@ -48,12 +48,12 @@
 <style lang="scss" scoped>
 .donate-section {
   background-color: #f2eded;
-  padding: 120px 0;
+  padding: 60px 0;
   .title {
     position: relative;
     text-align: center;
     margin-bottom: 52px;
-    padding-top: 70px;
+    padding-top: 35px;
     &::after {
       content: '';
       background: url('https://linhda0611.iwedding.info/templates/template15/images/sec-title-flower.png')
@@ -124,13 +124,13 @@
 }
 .invitation-section {
   background: url('https://linhda0611.iwedding.info/templates/template15/images/bg.png');
-  padding: 120px 0;
+  padding: 60px 0;
   overflow: hidden;
   .invitation-box {
     background: #fff;
     height: 583px;
     max-width: 580px;
-    padding: 120px 70px;
+    padding: 60px 35px;
     box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
     text-align: center;
     margin: 0 auto;

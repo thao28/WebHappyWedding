@@ -4,11 +4,11 @@
   <Slider />
   <InvitationSection />
   <CoupleSection />
-  <Accessibilities />
+  <!-- <Accessibilities /> -->
   <Story />
   <Event />
   <Album />
-  <Contact />
+  <!-- <Contact /> -->
   <Donation />
   <Footer />
   <PlayMusic />

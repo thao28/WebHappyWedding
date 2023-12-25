@@ -75,9 +75,9 @@
 
 <style lang="scss" scoped>
 .contact-section {
-  padding: 120px 0;
+  padding: 60px 0;
   @media only screen and (max-width: 991px) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
   .title {
     position: relative;

@@ -3,7 +3,8 @@
     <font-awesome-icon v-if="isPlaying" :icon="['fas', 'volume-high']" />
     <font-awesome-icon v-else :icon="['fas', 'volume-xmark']" />
   </button>
-  <audio ref="audio" :src="audioSrc"></audio>
+  <audio ref="audioElement" preload="auto" volume="0.5" :src="audioSrc" loop>
+  </audio>
 </template>
 
 <style lang="scss" scoped>
@@ -21,7 +22,7 @@
   height: 40px;
   z-index: 999;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50%;
     z-index: -1;
@@ -45,18 +46,21 @@
 </style>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { ref } from "vue";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import audioSrc from "@/assets/mp3/ChucVoNguNgon.mp3";
 
 let isPlaying = ref<boolean>(false);
-let audioSrc: string = '../../public/mp3/ChucVoNguNgon.mp3';
-let audio = ref<any>(null);
+let audioElement = ref<any>(null);
+
 const toggleAudio = () => {
-  let song: any = audio.value;
   if (isPlaying.value) {
-    song.pause();
+    audioElement.value.pause();
   } else {
-    song.play();
+    console.log(audioElement)
+    if(audioElement.value){
+      audioElement.value.play();
+    }
   }
   isPlaying.value = !isPlaying.value;
 };

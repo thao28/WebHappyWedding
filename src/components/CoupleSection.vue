@@ -2,7 +2,7 @@
   <section id="couple" class="couple-section" ref="couple">
     <div class="tw-container">
       <div class="tw-block md:tw-flex">
-        <div class="tw-w-full">
+        <div class="tw-w-full tw-h-full">
           <div class="title">
             <h2>Cô dâu & Chú rể</h2>
             <p>
@@ -13,13 +13,13 @@
         </div>
       </div>
       <div class="tw-block sm:tw-flex">
-        <div class="tw-w-full">
-          <div class="couple-area">
+        <div class="tw-w-full tw-h-full ">
+          <div class="couple-area ">
             <transition name="slide-right">
-              <div class="couple-row" v-if="showP">
+              <div class="couple-row tw-bg-[#f9f9f9]" v-if="showP">
                 <div class="img-holder">
-                  <img
-                    class="tw-w-full"
+                  <a-image
+                    class="tw-w-full tw-h-full"
                     src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/129d1550e15d4353f9a428a8745e6271.jpeg"
                     alt=""
                   />
@@ -37,8 +37,8 @@
               </div>
             </transition>
             <transition name="slide-left">
-              <div class="couple-row" v-if="showP">
-                <div class="detail">
+              <div class="couple-row tw-bg-[#f9f9f9]" v-if="showP">
+                <div class="detail tw-h-full">
                   <div class="inner">
                     <h2>Thuỳ Linh</h2>
                     <p>
@@ -48,9 +48,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="img-holder slide-right">
-                  <img
-                    class="tw-w-full"
+                <div class="img-holder slide-right tw-h-full">
+                  <a-image
+                    class="tw-w-full tw-h-full"
                     src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/66eed7617572e6f734c7c8f96a24ce60.jpeg"
                     alt=""
                   />
@@ -66,7 +66,7 @@
 
 <style lang="scss" scoped>
 .couple-section {
-  padding: 120px 0;
+  padding: 60px 0;
   @media only screen and (max-width: 768px) {
     .row {
       padding: 0;
@@ -105,6 +105,7 @@
     }
   }
   .couple-area {
+    display:block;
     .couple-row {
       display: flex;
       @media only screen and (max-width: 991px) {
@@ -118,34 +119,24 @@
         img {
           max-width: 100%;
           @media only screen and (min-width: 992px) {
-            height: 474px;
             object-fit: cover;
           }
         }
       }
       .detail {
         width: 50%;
+        height:100%;
         background-color: #f9f9f9;
-        position: relative;
-        height: 474px;
         @media only screen and (max-width: 991px) {
-          position: relative;
           width: 100%;
-          height: auto;
+          height: 100%;
           &:last-child {
             margin-bottom: 60px;
           }
         }
         .inner {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
+          height:100%;
           padding: 50px;
-          @media only screen and (max-width: 991px) {
-            top: auto;
-            transform: none;
-            position: relative;
-          }
           h2 {
             font-size: 2.4rem;
             font-family: 'Dancing Script';
@@ -163,13 +154,13 @@
 }
 .invitation-section {
   background: url('https://linhda0611.iwedding.info/templates/template15/images/bg.png');
-  padding: 120px 0;
+  padding: 60px 0;
   overflow: hidden;
   .invitation-box {
     background: #fff;
     height: 583px;
     max-width: 580px;
-    padding: 120px 70px;
+    padding: 60px 35px;
     box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
     text-align: center;
     margin: 0 auto;

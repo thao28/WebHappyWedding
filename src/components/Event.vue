@@ -14,7 +14,7 @@
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Lễ cưới nhà nữ</h3>
                 <div class="img-wrap">
-                  <img
+                  <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/7744fc9739685fe61c53cd8fe2cf7e52.png"
                     alt=""
                   />
@@ -31,7 +31,7 @@
               <div class="grid">
                 <h3 class="tw-font-comfortaa">TIỆC CƯỚI NHÀ NỮ</h3>
                 <div class="img-wrap">
-                  <img
+                  <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/0ea5ba9f2cbe132b3fe488103eb61817.png"
                     alt=""
                   />
@@ -48,7 +48,7 @@
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Lễ cưới nhà nam</h3>
                 <div class="img-wrap">
-                  <img
+                  <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/eee1cb36b560f0d80f513c4e9be666db.png"
                     alt=""
                   />
@@ -65,7 +65,7 @@
               <div class="grid">
                 <h3 class="tw-font-comfortaa tw-font-comfortaa">Tiệc cưới nhà nam</h3>
                 <div class="img-wrap">
-                  <img
+                  <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/21b07b7d583692f49091b87facbf2c92.png"
                     alt=""
                   />
@@ -104,7 +104,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    padding-top: 120px;
+    padding-top: 60px;
     &::before {
       content: '';
       background: rgba(0, 0, 0, 0.3);
@@ -168,7 +168,7 @@
           margin-bottom: 28px;
           &::after {
             content: '';
-            width: 120px;
+            width: 60px;
             left: 50%;
             bottom: 0;
             height: 2px;
