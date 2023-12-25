@@ -3,7 +3,7 @@
     <Carousel :autoplay="3000" :transition="1500" :itemsToShow="1" :wrapAround="true">
       <Slide v-for="(image, index) in images" :key="image.id">
         <div class="tw-w-full tw-h-full tw-justify-items-center tw-items-center">
-          <a-image class="slide-img" :src="image.url" alt="" loading="lazy" />
+          <img class="slide-img" :src="image.url" alt="" loading="lazy" />
         </div>
       </Slide>
     </Carousel>
