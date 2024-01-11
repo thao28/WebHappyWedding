@@ -26,7 +26,7 @@
                   Đan Phượng, Hà nội
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a target="_blank" href="https://www.google.com/maps/search/X%C3%B3m+%C4%90%E1%BB%93ng,+x%C3%A3+Quang+Trung,+V%E1%BB%A5+B%E1%BA%A3n,+Nam+%C4%90%E1%BB%8Bnh/@20.3775074,106.099668,17.92z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps/search/Th%C3%B4n+th%C3%A1p,+X%C3%A3+%C4%90%C3%B2ng+th%C3%A1p,Huy%E1%BB%87n+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+n%E1%BB%99i/@21.0841347,105.6325028,14z/data=!3m1!4b1!4m6!2m5!3m4!2s20.386861,+106.076422!4m2!1d106.0764216!2d20.3868609?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Tiệc cưới nhà nữ</h3>
@@ -40,10 +40,10 @@
                   <strong class="tw-font-comfortaa">09:00 AM 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Đan Phượng, Hà nội
+                  Thôn tháp, Xã Đòng tháp,Huyện Đan Phượng, Hà nội
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a target="_blank" href="https://www.google.com/maps/search/X%C3%B3m+%C4%90%E1%BB%93ng,+x%C3%A3+Quang+Trung,+V%E1%BB%A5+B%E1%BA%A3n,+Nam+%C4%90%E1%BB%8Bnh/@20.3775074,106.099668,17.92z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps/search/Th%C3%B4n+th%C3%A1p,+X%C3%A3+%C4%90%C3%B2ng+th%C3%A1p,Huy%E1%BB%87n+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+n%E1%BB%99i/@21.0841347,105.6325028,14z/data=!3m1!4b1!4m6!2m5!3m4!2s20.386861,+106.076422!4m2!1d106.0764216!2d20.3868609?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Lễ cưới</h3>
@@ -54,7 +54,7 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">13:00 AM 21/01/2023</strong>
+                  <strong class="tw-font-comfortaa">12:00 AM 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
                   Thôn tháp, xã Cộng hoà, huyện Vụ bản, tỉnh Nam Định
@@ -71,7 +71,7 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 21/01/2023</strong>
+                  <strong class="tw-font-comfortaa">10:00 AM 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
                   Thôn tháp, xã Cộng hoà, huyện Vụ bản, tỉnh Nam Định
@@ -97,7 +97,7 @@
     max-width: 970px;
   }
   .top-background {
-    background: url('https://edtexco-x360-dev.s3.ap-southeast-1.amazonaws.com/dev/images/tuan/THK_6490-min.jpg')
+    background: url('../assets/images/DAQ_3141-min.jpg')
       center center/cover no-repeat;
     width: 100%;
     height: 60%;

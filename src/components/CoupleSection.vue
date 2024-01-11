@@ -27,7 +27,7 @@
                   <div class="inner">
                     <h2>Phạm Hiếu</h2>
                     <p>
-                      Chàng trai Song tử là những người đáng tin cậy và chân thành trong tình yêu😍. Nhân Mã cũng khá lãng mạn và tâm lý, luôn dành nhiều sự quan tâm và những điều tốt đẹp nhất cho người yêu.
+                      Chàng trai Song Tử là những người đáng tin cậy và chân thành trong tình yêu😍. Song Tử cũng khá lãng mạn và tâm lý, luôn dành nhiều sự quan tâm và những điều tốt đẹp nhất cho người yêu.
                     </p>
                   </div>
                 </div>
@@ -39,7 +39,7 @@
                   <div class="inner">
                     <h2>Thanh Trà</h2>
                     <p>
-                      Cô gái cung Thiên bình nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
+                      Cô gái cung Thiên Bình nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
                       chân đến những vùng đất mới😍 Ước mơ lớn nhất của cô dâu là được làm vợ của
                       chú rể🤣
                     </p>

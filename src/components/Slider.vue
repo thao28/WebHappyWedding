@@ -24,17 +24,12 @@ import 'vue3-carousel/dist/carousel.css';
 import {HeartFilled} from "@ant-design/icons-vue";
 import slider1 from "@/assets/images/slider1.png";
 import slider2 from "@/assets/images/2-min.png"
-import slider3 from "@/assets/images/DAQ_3141-min.jpg"
 interface Image {
   id: number;
   url: string;
 }
 
 const images: Image[] = [
-  {
-    id: 1,
-    url: slider3,
-  },
   {
     id: 2,
     url: slider2,
