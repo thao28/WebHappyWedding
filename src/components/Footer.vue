@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .site-footer {
-  background: url('../assets/images/DAQ_3903-min.jpg')
+  background: url('../assets/mp3/153-min.png')
     center bottom/100% no-repeat local;
     text-align: center;
     height:100vh;

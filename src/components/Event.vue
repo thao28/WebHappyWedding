@@ -20,10 +20,10 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 21/01/2024</strong>
+                  <strong class="tw-font-comfortaa">10:00 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Đan Phượng, Hà nội
+                    Thôn Tháp, Xã Đồng Tháp, Huyện Đan Phượng, Hà nội
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
                 <a target="_blank" href="https://www.google.com/maps/search/Th%C3%B4n+th%C3%A1p,+X%C3%A3+%C4%90%C3%B2ng+th%C3%A1p,Huy%E1%BB%87n+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+n%E1%BB%99i/@21.0841347,105.6325028,14z/data=!3m1!4b1!4m6!2m5!3m4!2s20.386861,+106.076422!4m2!1d106.0764216!2d20.3868609?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
@@ -37,10 +37,10 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">09:00 AM 21/01/2024</strong>
+                  <strong class="tw-font-comfortaa">17:00 20/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Thôn tháp, Xã Đòng tháp,Huyện Đan Phượng, Hà nội
+                  Thôn Tháp, Xã Đồng Tháp, Huyện Đan Phượng, Hà nội
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
                 <a target="_blank" href="https://www.google.com/maps/search/Th%C3%B4n+th%C3%A1p,+X%C3%A3+%C4%90%C3%B2ng+th%C3%A1p,Huy%E1%BB%87n+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+n%E1%BB%99i/@21.0841347,105.6325028,14z/data=!3m1!4b1!4m6!2m5!3m4!2s20.386861,+106.076422!4m2!1d106.0764216!2d20.3868609?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
@@ -54,10 +54,10 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">12:00 AM 21/01/2024</strong>
+                  <strong class="tw-font-comfortaa">12:00 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Thôn tháp, xã Cộng hoà, huyện Vụ bản, tỉnh Nam Định
+                  Thôn Tháp, xã Cộng hoà, huyện Vụ Bản, tỉnh Nam Định
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
                 <a target="_blank" href="https://www.google.com/maps/@20.3868801,106.0736223,16.64z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
@@ -71,10 +71,10 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 21/01/2024</strong>
+                  <strong class="tw-font-comfortaa">17:00 20/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Thôn tháp, xã Cộng hoà, huyện Vụ bản, tỉnh Nam Định
+                  Thôn Tháp, xã Cộng Hoà, huyện Vụ Bản, tỉnh Nam Định
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
                 <a target="_blank" href="https://www.google.com/maps/@20.3868801,106.0736223,16.64z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
