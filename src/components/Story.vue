@@ -6,8 +6,13 @@
           <div class="title">
             <h2>Chuyện Tình Yêu</h2>
             <p class="tw-text-sm tw-text-gray tw-font-comfortaa">
-              Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó
-              là sự quan tâm, chia sẻ, giúp đỡ, hy sinh.
+              “Đố ai định nghĩa được tình yêu
+              <br/>
+              Có khó gì đâu được yêu chiều
+              <br/>
+              Quan tâm, chia sẻ và giúp đỡ
+              <br/>
+              Hy sinh lo lắng cho người yêu”
             </p>
           </div>
         </div>
@@ -20,7 +25,6 @@
                 <transition name="slide-right">
                   <div class="detail" v-if="showP">
                     <h3 class="tw-font-comfortaa">Lời tỏ tình dễ thương</h3>
-                    <span class="date">November 05 2022 </span>
                     <p class="tw-font-comfortaa">
                       Một mình giữa phố thị nấp tập. Mỗi chiều cuối tuần thường chạy xe vòng quanh
                       qua những con phố, len lỏi trong từng dòng người tấp nập. Hay thậm chí là ghé
@@ -34,8 +38,8 @@
                 <transition name="slide-left">
                   <div class="img-holder" v-if="showP">
                     <a-image
-                      src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/2a24c5682d30e4e7ab491e6dec531243.jpeg"
-                      alt=""
+                      :src="image1"
+                      alt="image1"
                     />
                   </div>
                 </transition>
@@ -44,22 +48,16 @@
                 <transition name="slide-right">
                   <div class="img-holder" v-if="showP">
                     <a-image
-                      src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/b2d4ed7b8ce31444085c3b430b3d7010.jpeg"
-                      alt=""
+                     :src="image2"
+                      alt="image2"
                     />
                   </div>
                 </transition>
                 <transition name="slide-left">
                   <div class="detail" v-if="showP">
-                    <h3 class="tw-font-comfortaa">Lời tỏ tình dễ thương</h3>
-                    <span class="date tw-font-comfortaa">November 05 2022 </span>
+                    <h3 class="tw-font-comfortaa">Phút Giây Cầu Hôn</h3>
                     <p class="tw-font-comfortaa">
-                      Một mình giữa phố thị nấp tập. Mỗi chiều cuối tuần thường chạy xe vòng quanh
-                      qua những con phố, len lỏi trong từng dòng người tấp nập. Hay thậm chí là ghé
-                      vào một quán cà phê ven đường để ngồi đó và cảm nhận về cuộc sống của riêng
-                      mình. Đôi khi lạc lõng và hơi cô đơn. Nhưng rồi một ngày đẹp trời, người con
-                      trai ấy xuất hiện, nắm tay rồi thủ thỉ vào tai: “Hy vọng sau này anh được làm
-                      những điều ấy cùng em”.
+                     2 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta nhận ra được rất nhiều điều. Yêu nhau, vun vén hạnh phúc và cùng nỗ lực vượt qua những khó khăn trong cuộc sống. Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh ngỏ lời “Làm vợ anh nhé!”, em đã nguyện ý đời này, đi đâu cũng được, miễn là cùng anh.
                     </p>
                   </div>
                 </transition>
@@ -76,7 +74,7 @@
 .story-section {
   padding: 60px 0;
   @media screen and (max-width: 991px) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
   .title {
     position: relative;
@@ -433,7 +431,8 @@
 
 <script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-
+import image1 from "@/assets/images/5-min.jpg";
+import image2 from "@/assets/images/6-min.jpg";
 const story = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 

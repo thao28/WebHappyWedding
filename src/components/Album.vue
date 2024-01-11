@@ -3,20 +3,20 @@
     <div class="lg:tw-container">
       <div class="sm:tw-block tw-flex tw-px-3.5">
         <div class="tw-w-3/4 tw-mx-auto">
-          <div class="title tw-font-comfortaa">
+          <div class="title tw-font-comfortaa tw-mb-8">
             <h2>Album Hình Cưới</h2>
             <p>
               Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ
               cho bạn dũng khí.
             </p>
           </div>
-          <div class="tw-flex tw-items-center tw-justify-center">
-          <a class="album-button " href="#">Xem Album</a>
-          </div>
         </div>
       </div>
       <div class="tw-columns-3xs">
-        <a-image class="tw-mb-4" v-for="image in images" :src="image.url" alt=""/>
+        <a-image-preview-group>
+          <a-image class="tw-mb-4" v-for="image in images" :src="image.url" alt=""/>
+        </a-image-preview-group>
+        
       </div>
     </div>
   </section>
@@ -80,6 +80,20 @@
 </style>
 
 <script lang="ts" setup>
+import {ref} from "vue";
+import image1 from "@/assets/images/28-min.png";
+import image2 from "@/assets/images/47-min.png";
+import image3 from "@/assets/images/55-min.png";
+import image4 from "@/assets/images/155-min.png";
+import image5 from "@/assets/images/160-min.png";
+import image6 from "@/assets/images/DAQ_2990-min.jpg";
+import image7 from "@/assets/images/DAQ_3050-min.jpg";
+import image8 from "@/assets/images/DAQ_3060-min.jpg";
+import image9 from "@/assets/images/DAQ_3141-min.jpg";
+import image10 from "@/assets/images/DAQ_3220-min.jpg";
+import image11 from "@/assets/images/DAQ_3240-min.jpg";
+import image12 from "@/assets/images/DAQ_3523-min.jpg";
+import image13 from "@/assets/images/DAQ_3612-min.jpg";
 interface Image {
   id: number;
   url: string;
@@ -88,47 +102,55 @@ interface Image {
 const images:Image[] = [
   {
     id: 1,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1d0b2cdf2182f00ef34/small.jpg',
+    url:image1,
   },
   {
     id: 2,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1d0b2cdf2182f00ef34/small.jpg',
-  },
-  {
-    id: 11,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1eddaed22d1650854e3/small.jpg',
+    url: image2,
   },
   {
     id: 3,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1d0b2cdf2182f00ef34/small.jpg',
+    url: image3,
   },
   {
     id: 4,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1e798a36973a90b78c8/small.jpg',
+    url: image4,
   },
   {
     id: 5,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1d0b2cdf2182f00ef34/small.jpg',
+    url: image5,
   },
   {
     id: 6,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1f575a686ad730eb564/small.jpg',
+    url:image6,
   },
   {
     id: 7,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1fb410fa9c8e304f356/small.jpg',
+    url: image7,
   },
   {
     id: 8,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1d0b2cdf2182f00ef34/small.jpg',
+    url: image8,
   },
   {
     id: 9,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1d0b2cdf2182f00ef34/small.jpg',
+    url: image9,
   },
   {
     id: 10,
-    url: 'https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/galleries/647aa1fb410fa9c8e304f356/small.jpg',
+    url:image10,
+  },
+  {
+    id: 11,
+    url:image11,
+  },
+   {
+    id: 12,
+    url: image12,
+  },
+   {
+    id: 13,
+    url: image13,
   },
 ];
 </script>

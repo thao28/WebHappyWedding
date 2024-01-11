@@ -6,8 +6,7 @@
           <div class="title">
             <h2>Cô dâu & Chú rể</h2>
             <p>
-              Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính
-              bạn.
+              Tình yêu là khi hạnh phúc của nửa kia chính là mong muốn lớn nhất của bạn
             </p>
           </div>
         </div>
@@ -20,17 +19,15 @@
                 <div class="img-holder">
                   <a-image
                     class="tw-w-full tw-h-full"
-                    src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/129d1550e15d4353f9a428a8745e6271.jpeg"
+                    :src="image1"
                     alt=""
                   />
                 </div>
                 <div class="detail slide-right">
                   <div class="inner">
-                    <h2>Văn Đà</h2>
+                    <h2>Phạm Hiếu</h2>
                     <p>
-                      Chàng trai Cự Giải sâu sắc và chín chắn. Yêu gia đình và thích trẻ con🥰 Trở
-                      thành cô dâu xinh đẹp nhất là ước mơ của mọi cô gái, biến người mình yêu thành
-                      cô dâu hạnh phúc nhất chính là ước mơ của chú rể.
+                      Chàng trai Song tử là những người đáng tin cậy và chân thành trong tình yêu😍. Nhân Mã cũng khá lãng mạn và tâm lý, luôn dành nhiều sự quan tâm và những điều tốt đẹp nhất cho người yêu.
                     </p>
                   </div>
                 </div>
@@ -40,9 +37,9 @@
               <div class="couple-row tw-bg-[#f9f9f9]" v-if="showP">
                 <div class="detail tw-h-full">
                   <div class="inner">
-                    <h2>Thuỳ Linh</h2>
+                    <h2>Thanh Trà</h2>
                     <p>
-                      Cô gái cung Kim Ngưu nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
+                      Cô gái cung Thiên bình nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
                       chân đến những vùng đất mới😍 Ước mơ lớn nhất của cô dâu là được làm vợ của
                       chú rể🤣
                     </p>
@@ -51,8 +48,8 @@
                 <div class="img-holder slide-right tw-h-full">
                   <a-image
                     class="tw-w-full tw-h-full"
-                    src="https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/66eed7617572e6f734c7c8f96a24ce60.jpeg"
-                    alt=""
+                    :src="image2"
+                    alt="image2"
                   />
                 </div>
               </div>
@@ -308,7 +305,8 @@
 
 <script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-
+import image1 from "@/assets/images/3-min.jpg";
+import image2 from "@/assets/images/4-min.jpg";
 const couple = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 

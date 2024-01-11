@@ -8,9 +8,9 @@
         <div class="nav-bar-header">
           <div class="logo tw-ml-4">
             <a href="#">
-              <span class="tw-text-3xl tw-text-pink">D</span>
+              <span class="tw-text-3xl tw-text-pink">H</span>
               <span class="tw-text-3xl tw-text-pink">♥</span>
-              <span class="tw-text-3xl tw-text-pink">L</span>
+              <span class="tw-text-3xl tw-text-pink">T</span>
             </a>
           </div>
           <div class="toggle-button tw-mr-4" @click="() => handleOpen()">

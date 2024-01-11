@@ -12,7 +12,7 @@
           <transition name="fade">
             <div class="event-grids" v-if="showP">
               <div class="grid">
-                <h3 class="tw-font-comfortaa">Lễ cưới nhà nữ</h3>
+                <h3 class="tw-font-comfortaa">Lễ vu quy</h3>
                 <div class="img-wrap">
                   <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/7744fc9739685fe61c53cd8fe2cf7e52.png"
@@ -20,16 +20,16 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 11/06/2023</strong>
+                  <strong class="tw-font-comfortaa">10:00 AM 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Xóm 9, Thôn Kim Ngọc 3, xã Liên Giang, huyện Đông Hưng, tỉnh Thái Bình
+                  Đan Phượng, Hà nội
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a href="#" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps/search/X%C3%B3m+%C4%90%E1%BB%93ng,+x%C3%A3+Quang+Trung,+V%E1%BB%A5+B%E1%BA%A3n,+Nam+%C4%90%E1%BB%8Bnh/@20.3775074,106.099668,17.92z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
-                <h3 class="tw-font-comfortaa">TIỆC CƯỚI NHÀ NỮ</h3>
+                <h3 class="tw-font-comfortaa">Tiệc cưới nhà nữ</h3>
                 <div class="img-wrap">
                   <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/0ea5ba9f2cbe132b3fe488103eb61817.png"
@@ -37,16 +37,16 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 11/06/2023</strong>
+                  <strong class="tw-font-comfortaa">09:00 AM 21/01/2024</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Xóm 9, Thôn Kim Ngọc 3, xã Liên Giang, huyện Đông Hưng, tỉnh Thái Bình
+                  Đan Phượng, Hà nội
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a href="#" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps/search/X%C3%B3m+%C4%90%E1%BB%93ng,+x%C3%A3+Quang+Trung,+V%E1%BB%A5+B%E1%BA%A3n,+Nam+%C4%90%E1%BB%8Bnh/@20.3775074,106.099668,17.92z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
-                <h3 class="tw-font-comfortaa">Lễ cưới nhà nam</h3>
+                <h3 class="tw-font-comfortaa">Lễ cưới</h3>
                 <div class="img-wrap">
                   <a-image
                     src="https://cdn.biihappy.com/ziiweb/default/website/eee1cb36b560f0d80f513c4e9be666db.png"
@@ -54,13 +54,13 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 11/06/2023</strong>
+                  <strong class="tw-font-comfortaa">13:00 AM 21/01/2023</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Xóm 9, Thôn Kim Ngọc 3, xã Liên Giang, huyện Đông Hưng, tỉnh Thái Bình
+                  Thôn tháp, xã Cộng hoà, huyện Vụ bản, tỉnh Nam Định
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a href="#" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps/@20.3868801,106.0736223,16.64z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
                 <h3 class="tw-font-comfortaa tw-font-comfortaa">Tiệc cưới nhà nam</h3>
@@ -71,13 +71,13 @@
                   />
                 </div>
                 <p>
-                  <strong class="tw-font-comfortaa">10:00 AM 11/06/2023</strong>
+                  <strong class="tw-font-comfortaa">10:00 AM 21/01/2023</strong>
                 </p>
                 <p class="tw-font-comfortaa">
-                  Xóm 9, Thôn Kim Ngọc 3, xã Liên Giang, huyện Đông Hưng, tỉnh Thái Bình
+                  Thôn tháp, xã Cộng hoà, huyện Vụ bản, tỉnh Nam Định
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a href="#" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps/@20.3868801,106.0736223,16.64z?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
             </div>
           </transition>
@@ -97,7 +97,7 @@
     max-width: 970px;
   }
   .top-background {
-    background: url('https://cdn.biihappy.com/ziiweb/website/647a951e7a0e7dd068022467/templates/6174ef83a62963738e0a367c/e484fa2a89f11bde745e0fcba93f2cb2.jpg')
+    background: url('https://edtexco-x360-dev.s3.ap-southeast-1.amazonaws.com/dev/images/tuan/THK_6490-min.jpg')
       center center/cover no-repeat;
     width: 100%;
     height: 60%;
