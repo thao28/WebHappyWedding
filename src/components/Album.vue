@@ -81,7 +81,7 @@
 
 <script lang="ts" setup>
 import {ref} from "vue";
-import image1 from "@/assets/images/28-min.png";
+import image1 from "@/assets/images/38-min.png";
 import image2 from "@/assets/images/47-min.png";
 import image3 from "@/assets/images/55-min.png";
 import image4 from "@/assets/images/155-min.png";
