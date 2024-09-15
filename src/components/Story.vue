@@ -24,8 +24,8 @@
               <li>
                 <transition name="slide-right">
                   <div class="detail" v-if="showP">
-                    <h3 class="tw-font-comfortaa">Lời tỏ tình dễ thương</h3>
-                    <p class="tw-font-comfortaa">
+                    <h3 class="tw-font-comfortaa text-family tw-text-[30px]">Lời tỏ tình dễ thương</h3>
+                    <p class="tw-font-comfortaa text-family">
                       Một mình giữa phố thị nấp tập. Mỗi chiều cuối tuần thường chạy xe vòng quanh
                       qua những con phố, len lỏi trong từng dòng người tấp nập. Hay thậm chí là ghé
                       vào một quán cà phê ven đường để ngồi đó và cảm nhận về cuộc sống của riêng
@@ -55,8 +55,8 @@
                 </transition>
                 <transition name="slide-left">
                   <div class="detail" v-if="showP">
-                    <h3 class="tw-font-comfortaa">Phút Giây Cầu Hôn</h3>
-                    <p class="tw-font-comfortaa">
+                    <h3 class="tw-font-comfortaa text-family !tw-text-[30px]">Phút Giây Cầu Hôn</h3>
+                    <p class="tw-font-comfortaa text-family" >
                      2 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta nhận ra được rất nhiều điều. Yêu nhau, vun vén hạnh phúc và cùng nỗ lực vượt qua những khó khăn trong cuộc sống. Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh ngỏ lời “Làm vợ anh nhé!”, em đã nguyện ý đời này, đi đâu cũng được, miễn là cùng anh.
                     </p>
                   </div>
@@ -426,6 +426,10 @@
       z-index: -1;
     }
   }
+}
+
+.text-family {
+  font-family: 'Dancing Script';
 }
 </style>
 

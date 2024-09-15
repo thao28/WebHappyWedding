@@ -26,7 +26,7 @@
                     Bình Tân, Bắc Bình, Bình Thuận 
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a target="_blank" href="https://www.google.com/maps/search/Th%C3%B4n+th%C3%A1p,+X%C3%A3+%C4%90%C3%B2ng+th%C3%A1p,Huy%E1%BB%87n+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+n%E1%BB%99i/@21.0841347,105.6325028,14z/data=!3m1!4b1!4m6!2m5!3m4!2s20.386861,+106.076422!4m2!1d106.0764216!2d20.3868609?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps?q=Rio+Wedding+Restaurant,+B%C3%ACnh+Nh%C6%A1n,+B%C3%ACnh+T%C3%A2n,+B%E1%BA%AFc+B%C3%ACnh,+B%C3%ACnh+Thu%E1%BA%ADn,+Vi%E1%BB%87t+Nam&ftid=0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4&entry=gps&lucs=,94226966,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTI5LjEuODA5MjAYACDXggMqYyw5NDIyNjk2Niw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICSlA%3D&g_st=ifm" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Tiệc cưới nhà nữ</h3>
@@ -43,7 +43,7 @@
                   Nhà hàng Rio, Bình Tân, Bắc Bình, Bình Thuận 
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a target="_blank" href="https://www.google.com/maps/search/Th%C3%B4n+th%C3%A1p,+X%C3%A3+%C4%90%C3%B2ng+th%C3%A1p,Huy%E1%BB%87n+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+n%E1%BB%99i/@21.0841347,105.6325028,14z/data=!3m1!4b1!4m6!2m5!3m4!2s20.386861,+106.076422!4m2!1d106.0764216!2d20.3868609?hl=vi-VN&entry=ttu" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps?q=Rio+Wedding+Restaurant,+B%C3%ACnh+Nh%C6%A1n,+B%C3%ACnh+T%C3%A2n,+B%E1%BA%AFc+B%C3%ACnh,+B%C3%ACnh+Thu%E1%BA%ADn,+Vi%E1%BB%87t+Nam&ftid=0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4&entry=gps&lucs=,94226966,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTI5LjEuODA5MjAYACDXggMqYyw5NDIyNjk2Niw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICSlA%3D&g_st=ifm" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Lễ cưới</h3>
@@ -60,7 +60,7 @@
                   Bình Tân, Bắc Bình, Bình Thuận 
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a target="_blank" href="https://www.google.com/maps/place/Rio+Wedding+Restaurant/@11.1868626,108.2760556,17z/data=!4m14!1m7!3m6!1s0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4!2sRio+Wedding+Restaurant!8m2!3d11.1868626!4d108.2786359!16s%2Fg%2F11hrl71m8d!3m5!1s0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4!8m2!3d11.1868626!4d108.2786359!16s%2Fg%2F11hrl71m8d?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps?q=Rio+Wedding+Restaurant,+B%C3%ACnh+Nh%C6%A1n,+B%C3%ACnh+T%C3%A2n,+B%E1%BA%AFc+B%C3%ACnh,+B%C3%ACnh+Thu%E1%BA%ADn,+Vi%E1%BB%87t+Nam&ftid=0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4&entry=gps&lucs=,94226966,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTI5LjEuODA5MjAYACDXggMqYyw5NDIyNjk2Niw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICSlA%3D&g_st=ifm" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
               <div class="grid">
                 <h3 class="tw-font-comfortaa">Tiệc cưới nhà nam</h3>
@@ -77,7 +77,7 @@
                   Nhà hàng Rio, Bình Tân, Bắc Bình, Bình Thuận 
                 </p>
                 <div class="calendar-button tw-font-comfortaa">Thêm vào lịch</div>
-                <a target="_blank" href="https://www.google.com/maps/place/Rio+Wedding+Restaurant/@11.1868626,108.2760556,17z/data=!4m14!1m7!3m6!1s0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4!2sRio+Wedding+Restaurant!8m2!3d11.1868626!4d108.2786359!16s%2Fg%2F11hrl71m8d!3m5!1s0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4!8m2!3d11.1868626!4d108.2786359!16s%2Fg%2F11hrl71m8d?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
+                <a target="_blank" href="https://www.google.com/maps?q=Rio+Wedding+Restaurant,+B%C3%ACnh+Nh%C6%A1n,+B%C3%ACnh+T%C3%A2n,+B%E1%BA%AFc+B%C3%ACnh,+B%C3%ACnh+Thu%E1%BA%ADn,+Vi%E1%BB%87t+Nam&ftid=0x3176bcf0b7b727ed:0xcc5487f3abc4b3a4&entry=gps&lucs=,94226966,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTI5LjEuODA5MjAYACDXggMqYyw5NDIyNjk2Niw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICSlA%3D&g_st=ifm" class="see-location-button tw-font-comfortaa">Xem bản đồ</a>
               </div>
             </div>
           </transition>
