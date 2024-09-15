@@ -25,7 +25,7 @@
                 </div>
                 <div class="detail slide-right">
                   <div class="inner">
-                    <h2>Phạm Hiếu</h2>
+                    <h2>Đại Nghĩa</h2>
                     <p>
                       Chàng trai Song Tử là những người đáng tin cậy và chân thành trong tình yêu😍. Song Tử cũng khá lãng mạn và tâm lý, luôn dành nhiều sự quan tâm và những điều tốt đẹp nhất cho người yêu.
                     </p>
@@ -37,9 +37,9 @@
               <div class="couple-row tw-bg-[#f9f9f9]" v-if="showP">
                 <div class="detail tw-h-full">
                   <div class="inner">
-                    <h2>Thanh Trà</h2>
+                    <h2>Ikegami Haruka</h2>
                     <p>
-                      Cô gái cung Thiên Bình nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
+                      Cô gái cung Kim Ngưu nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
                       chân đến những vùng đất mới😍 Ước mơ lớn nhất của cô dâu là được làm vợ của
                       chú rể🤣
                     </p>
@@ -305,8 +305,8 @@
 
 <script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import image1 from "@/assets/images/3-min.jpg";
-import image2 from "@/assets/images/4-min.jpg";
+import image1 from "@/assets/imgaes/chure.jpg";
+import image2 from "@/assets/imgaes/codau1.jpg";
 const couple = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);
 

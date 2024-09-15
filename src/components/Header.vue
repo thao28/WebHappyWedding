@@ -20,7 +20,7 @@
           </div>
           <transition name="slide">
             <ul
-              class="mobile-list-item slide-out tw-w-0 tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8"
+              class="mobile-list-item slide-out tw-text-left tw-bg-white tw-z-10 tw-fixed tw-top-0 tw-h-screen tw-right-0 tw-max-w-sm tw-w-4/12 tw-pt-8"
               :class="{ 'slide-in': mobileNav,  'tw-hidden': isOpen }"
               id="mySidenav"
             >

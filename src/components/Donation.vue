@@ -23,10 +23,9 @@
                             alt=""
                           />
                     </a-space>
-                    <p class="tw-font-comfortaa">Ngân hàng: <strong>MSB</strong></p>
-                    <p class="tw-font-comfortaa">Tên tài khoản: <strong>PHAM TRONG HIEU</strong></p>
-                    <p class="tw-font-comfortaa">Số tài khoản: <strong>13001015652259</strong></p>
-                    <p class="tw-font-comfortaa">Chi nhánh: <strong>Nam Định</strong></p>
+                    <p class="tw-font-comfortaa">Ngân hàng: <strong>TECHCOMBANK</strong></p>
+                    <p class="tw-font-comfortaa">Tên tài khoản: <strong>HUYNH DAI NGHIA</strong></p>
+                    <p class="tw-font-comfortaa">Số tài khoản: <strong>1998052900</strong></p>
                   </div>
                 </transition>
               </div>
@@ -271,7 +270,7 @@
 
 <script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import qrHieu from "@/assets/Qr.png";
+import qrHieu from "@/assets/imgaes/qrcode.png";
 
 const donation = ref<HTMLElement | null>(null);
 const showP = ref<boolean>(false);

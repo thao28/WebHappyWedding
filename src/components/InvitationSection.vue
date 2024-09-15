@@ -30,7 +30,7 @@ const formatDayOfWeek = (date: string) => {
   }
 };
 clock = setInterval(() => {
-  weddingDay = new Date('january 21, 2024 12:00:00');
+  weddingDay = new Date('september 22, 2024 09:00:00');
   const distance = weddingDay - Date.now();
 
   if (distance < 0) {

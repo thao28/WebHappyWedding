@@ -48,7 +48,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import audioSrc from "@/assets/mp3/ChucVoNguNgon.mp3";
+import audioSrc from "@/assets/mp3/ido.mp3";
 
 let isPlaying = ref<boolean>(false);
 let audioElement = ref<any>(null);

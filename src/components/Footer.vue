@@ -1,12 +1,12 @@
 <template>
   <footer class="site-footer  tw-relative">
-      <div class="tw-text-3xl md:tw-text-5xl text">Thank you</div>
+      <div class="tw-text-3xl md:tw-text-5xl text tw-text-[#fff]">Thank you</div>
   </footer>
 </template>
 
 <style lang="scss" scoped>
 .site-footer {
-  background: url('../assets/mp3/153-min.png')
+  background: url('../assets/imgaes/thankyou.jpg')
     center bottom/100% no-repeat local;
     text-align: center;
     height:100vh;

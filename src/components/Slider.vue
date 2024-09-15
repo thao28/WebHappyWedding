@@ -9,11 +9,11 @@
     </Carousel>
     <div class="slide-text tw-absolute tw-left-1/2 tw-top-1/2">
       <div class="tw-flex tw-items-center tw-mb-3">
-        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-center tw-min-w-[250px]">Phạm Hiếu</div>
+        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-center tw-min-w-[250px]">Đại Nghĩa</div>
         <HeartFilled class="tw-text-3xl md:tw-text-5xl tw-text-white tw-mx-3"/>
-        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-center tw-min-w-[250px]">Thanh Trà</div>
+        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-center tw-min-w-[250px]">Ikegami Haruka</div>
       </div>
-      <h4 class="sub-title tw-font-comfortaa tw-text-center tw-text-white">21 Tháng 1 Năm 2024</h4>
+      <h4 class="sub-title tw-font-comfortaa tw-text-center tw-text-white">22 Tháng 9 Năm 2024</h4>
     </div>
   </div>
 </template>
@@ -22,22 +22,33 @@
 import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import {HeartFilled} from "@ant-design/icons-vue";
-import slider1 from "@/assets/images/slider1.png";
-import slider2 from "@/assets/images/2-min.png"
+import slider1 from "@/assets/imgaes/slider2.jpg";
+import slider2 from "@/assets/imgaes/slider3.jpg";
+import slider3 from "@/assets/imgaes/slider4.jpg"
+import slider4 from "@/assets/imgaes/slider5.jpg";
 interface Image {
   id: number;
   url: string;
 }
 
 const images: Image[] = [
-  {
-    id: 2,
-    url: slider2,
-  },
     {
     id: 3,
     url: slider1,
   },
+  {
+    id: 4,
+    url: slider2,
+  },
+    {
+    id: 5,
+    url: slider3,
+  },
+  {
+    id: 6,
+    url: slider4,
+  },
+ 
 ];
 </script>
 
