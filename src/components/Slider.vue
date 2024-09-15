@@ -9,9 +9,9 @@
     </Carousel>
     <div class="slide-text tw-absolute tw-left-1/2 tw-top-1/2">
       <div class="tw-flex tw-items-center tw-mb-3">
-        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-center tw-min-w-[250px]">Đại Nghĩa</div>
+        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-right tw-min-w-[250px] tw-mr-3">Đại Nghĩa</div>
         <HeartFilled class="tw-text-3xl md:tw-text-5xl tw-text-white tw-mx-3"/>
-        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-center tw-min-w-[250px]">Ikegami Haruka</div>
+        <div class="title tw-font-dancingScript tw-text-white tw-text-3xl md:tw-text-5xl tw-text-left tw-min-w-[250px] tw-ml-3">Haruka</div>
       </div>
       <h4 class="sub-title tw-font-comfortaa tw-text-center tw-text-white">22 Tháng 9 Năm 2024</h4>
     </div>

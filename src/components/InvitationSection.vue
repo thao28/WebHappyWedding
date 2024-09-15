@@ -77,25 +77,29 @@ onUnmounted(() => {
               id="days"
               class="countdown-item xs:tw-mr-4 lg:tw-mr-0 xs:tw-w-2/12 lg:tw-w-3/12 xs:tw-text-xl md:tw-text-5xl tw-text-pink tw-font-dancingScript"
             >
-              {{ days }} days
+              {{ days }}
+              <div>days</div>
             </div>
             <div
               id="hours"
               class="countdown-item xs:tw-mr-4 lg:tw-mr-0 xs:tw-w-2/12 lg:tw-w-3/12 xs:tw-text-xl md:tw-text-5xl tw-text-pink tw-font-dancingScript"
             >
-              {{ hours }} hours
+              {{ hours }} 
+              <div>hours</div>
             </div>
             <div
               id="minutes"
               class="countdown-item xs:tw-mr-4 lg:tw-mr-0 xs:tw-w-2/12 lg:tw-w-3/12 xs:tw-text-xl md:tw-text-5xl tw-text-pink tw-font-dancingScript"
             >
-              {{ minutes }} minutes
+              {{ minutes }}
+              <div>minutes</div>
             </div>
             <div
               id="seconds"
               class="countdown-item xs:tw-mr-4 lg:tw-mr-0 xs:tw-w-2/12 lg:tw-w-3/12 xs:tw-text-xl md:tw-text-5xl tw-text-pink tw-font-dancingScript"
             >
-              {{ seconds }} seconds
+              {{ seconds }} 
+              <div>seconds</div>
             </div>
           </div>
         </div>
