@@ -2,7 +2,7 @@
   <section id="event" class="event-section section">
     <div class="top-background">
       <h2 class="tw-w-3/4 tw-mx-auto">Sự kiện cưới</h2>
-      <p class="tw-w-3/4 tw-mx-auto tw-text-sm tw-text-gray tw-font-comfortaa">
+      <p class="tw-w-3/4 tw-mx-auto tw-text-sm tw-text-gray tw-font-comfortaa text-family">
         ...tình yêu không phải là nhìn chằm chằm vào nhau, mà là nhìn chằm chằm về cùng một hướng...
       </p>
     </div>
@@ -88,6 +88,9 @@
 </template>
 
 <style lang="scss" scoped>
+.text-family {
+  font-family: 'Dancing Script';
+}
 .event-section {
   position: relative;
   text-align: center;

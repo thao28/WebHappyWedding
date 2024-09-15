@@ -5,7 +5,7 @@
         <div class="tw-w-3/4 tw-mx-auto">
           <div class="title">
             <h2>Chuyện Tình Yêu</h2>
-            <p class="tw-text-sm tw-text-gray tw-font-comfortaa">
+            <p class="tw-text-sm tw-text-gray tw-font-comfortaa text-family">
               “Đố ai định nghĩa được tình yêu
               <br/>
               Có khó gì đâu được yêu chiều
@@ -24,7 +24,7 @@
               <li>
                 <transition name="slide-right">
                   <div class="detail" v-if="showP">
-                    <h3 class="tw-font-comfortaa text-family tw-text-[30px]">Lời tỏ tình dễ thương</h3>
+                    <h3 class="tw-font-comfortaa text-family !tw-text-[30px]">Lời tỏ tình dễ thương</h3>
                     <p class="tw-font-comfortaa text-family">
                       Một mình giữa phố thị nấp tập. Mỗi chiều cuối tuần thường chạy xe vòng quanh
                       qua những con phố, len lỏi trong từng dòng người tấp nập. Hay thậm chí là ghé

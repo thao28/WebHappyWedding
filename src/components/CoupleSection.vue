@@ -5,7 +5,7 @@
         <div class="tw-w-full tw-h-full">
           <div class="title">
             <h2>Cô dâu & Chú rể</h2>
-            <p>
+            <p class="text-family">
               Tình yêu là khi hạnh phúc của nửa kia chính là mong muốn lớn nhất của bạn
             </p>
           </div>
@@ -26,7 +26,7 @@
                 <div class="detail slide-right">
                   <div class="inner">
                     <h2>Đại Nghĩa</h2>
-                    <p>
+                    <p class="text-family">
                       Chàng trai Song Tử là những người đáng tin cậy và chân thành trong tình yêu😍. Song Tử cũng khá lãng mạn và tâm lý, luôn dành nhiều sự quan tâm và những điều tốt đẹp nhất cho người yêu.
                     </p>
                   </div>
@@ -38,7 +38,7 @@
                 <div class="detail tw-h-full">
                   <div class="inner">
                     <h2>Ikegami Haruka</h2>
-                    <p>
+                    <p class="text-family">
                       Cô gái cung Kim Ngưu nhiệt tình, hoà đồng và thân thiện. Thích khám phá và đặt
                       chân đến những vùng đất mới😍 Ước mơ lớn nhất của cô dâu là được làm vợ của
                       chú rể🤣
@@ -300,6 +300,9 @@
       z-index: -1;
     }
   }
+}
+.text-family {
+  font-family: 'Dancing Script';
 }
 </style>
 

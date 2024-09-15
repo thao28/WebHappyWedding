@@ -5,7 +5,7 @@
         <div class="tw-w-3/4 tw-mx-auto">
           <div class="title tw-font-comfortaa tw-mb-8">
             <h2>Album Hình Cưới</h2>
-            <p>
+            <p class="text-family">
               Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ
               cho bạn dũng khí.
             </p>
@@ -23,6 +23,9 @@
 </template>
 
 <style lang="scss" scoped>
+.text-family {
+  font-family: 'Dancing Script';
+}
 .wedding-album {
   padding: 100px 0;
   text-align: center;
